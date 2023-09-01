@@ -1,6 +1,5 @@
 spring:
   datasource:
-    platform: h2
     driver-class-name: org.h2.Driver
     url: jdbc:h2:file:~/test;IFEXISTS=FALSE;DB_CLOSE_DELAY=-1;DB_CLOSE_ON_EXIT=FALSE;MODE=MySQL
     username: sa
@@ -9,15 +8,13 @@ spring:
     database-platform: org.hibernate.dialect.H2Dialect
     generate-ddl: true
     #defer-datasource-initialization: false
-    hibernate:
-      show-sql: true
-      format_sql: true
-      ddl-auto: create
+    show-sql: true
   # spring boot 2.5.0 之后使用如下配置初始化脚本：SqlInitializationProperties
   sql:
     init:
       schemaLocations: classpath:db/schema.sql
       mode: always
+      platform: h2
 
   h2:
     console:

@@ -2,7 +2,6 @@ package com.example.mybatis.flex;
 
 import com.mybatisflex.core.row.Db;
 import com.mybatisflex.core.row.Row;
-import org.hibernate.dialect.aggregate.DB2AggregateSupport;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
